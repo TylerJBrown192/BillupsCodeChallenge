@@ -1,0 +1,10 @@
+.jumbotron h1, h3 {
+    display: inline-block;
+}
+
+.jumbotron img {
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #eee;
+}
