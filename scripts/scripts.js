@@ -37,9 +37,6 @@ var combinationsArray = [
     {computer: 5, user: 5, result: "It's a tie."},
 ]
 
-// document.getElementsByClass("play_buttons").addEventListener("click", function(num) {
-//     wouldYouLikeToPlayAGame(num);
-// })
 
 function wouldYouLikeToPlayAGame(userResult) {
     //get a random number between 1 and 5
