@@ -8,3 +8,7 @@
     position: absolute;
     background-color: #eee;
 }
+
+.lower_container {
+    margin-top: 30rem;
+}

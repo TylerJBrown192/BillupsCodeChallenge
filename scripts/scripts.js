@@ -37,7 +37,11 @@ var combinationsArray = [
     {computer: 5, user: 5, result: "It's a tie."},
 ]
 
-var play = function wouldYouLikeToPlayAGame(userResult) {
+// document.getElementsByClass("play_buttons").addEventListener("click", function(num) {
+//     wouldYouLikeToPlayAGame(num);
+// })
+
+function wouldYouLikeToPlayAGame(userResult) {
     //get a random number between 1 and 5
     function getRandomInt() {
       return Math.round(Math.random() * (5 - 1)) + 1;
@@ -54,14 +58,20 @@ var play = function wouldYouLikeToPlayAGame(userResult) {
             return false;
             alert("BLEEP BLOOP ERROR HOW DID YOU MESS THIS UP SO BAD");
         }
+    });
 
-    })
+    //Checking dev work in console
+    console.log("The computer's number was " + compResult + " and the user's number was " + userResult + ".");
 }
 
 
 //Nested if / elses are bit more ugly, but also is likely more performant than the object array mapping solution at this complexity level. I like the latter because of structure, but here's the former just in case!
 var play2 = function wouldYouLikeToPlayAGame2(user) {
-    var computer = Math.random(1..5);
+    function getRandomInt() {
+      return Math.round(Math.random() * (5 - 1)) + 1;
+    }
+
+    var computer = getRandomInt();
 
     if (computer == 1) {
         if (user == 2 || 4) {
